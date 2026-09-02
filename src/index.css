@@ -1,0 +1,55 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+body {
+  background-color: #f7f8fa;
+  color: #2b3440;
+  -webkit-font-smoothing: antialiased;
+}
+.page-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-position: center;
+  background-size: cover;
+  filter: blur(0.7px);
+  opacity: 0.38;
+  transform: scale(1.02);
+  pointer-events: none;
+}
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+.leaflet-container {
+  font-family: Inter, system-ui, sans-serif;
+  background: #eef1f5;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 6px;
+  box-shadow: 0 8px 28px rgba(15, 39, 66, 0.18);
+}
+.leaflet-popup-content {
+  margin: 0;
+}
+::selection {
+  background: #e6edf6;
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
